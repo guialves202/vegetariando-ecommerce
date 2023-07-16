@@ -89,6 +89,11 @@ header button i {
     color: #0a490a;
 }
 
+.login-link {
+    text-decoration: none;
+    color: blue;
+}
+
 #main-content {
     width: 100%;
     background-color: #f2f2f2;
