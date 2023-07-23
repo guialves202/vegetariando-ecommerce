@@ -8,7 +8,9 @@ class UserController {
 
     store(req, res) {
         const response = UserRepository.create(req.body);
-        res.send(response.json());
+        if(response) {
+            res.redirect('/');
+        }
     }
 
 }

@@ -1,0 +1,30 @@
+<main>
+    <div class="container">
+        <a href="/"><img src="../img/vegetariando.png" alt="logo" class="logo-img"></a>
+        <h1>Cadastre-se</h1>
+        <form action="/register" method="POST">
+
+            <input type="text" name="name" id="name" placeholder="Primeiro nome" required>
+            <input type="text" name="surname" id="surname" placeholder="Sobrenome" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF">
+
+            <select name="sexo" id="sexo">
+                <option value="M" selected>Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+
+            <input type="date" name="nascimento" id="nascimento">
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+            
+            <input type="password" name="passw" id="passw" placeholder="Senha" required>
+            <input type="password" name="passw2" id="passw2" placeholder="Confirme a senha" required>
+
+
+            <p>Já possui uma conta? <a href="/login">Clique aqui para fazer login</a></p>
+            <button type="submit" id="register-btn">Enviar</button>
+
+        </form>
+    </div>
+    
+</main>

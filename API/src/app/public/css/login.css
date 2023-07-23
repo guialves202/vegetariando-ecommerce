@@ -65,6 +65,7 @@ main form input::placeholder {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 main form p {

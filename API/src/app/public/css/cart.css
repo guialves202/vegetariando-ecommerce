@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-color: #13b813;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+header button {
+    background: none;
+    border: none;
+}
+
+header button i {
+    font-size: 30px;
+    color: black;
+}
+
+#logo-img {
+    height: auto;
+    width: auto;
+    max-width: 160px;
+    max-height: 200px;
+}
+
+#logo-div {
+    margin-left: -4vw;
+    margin-right: 4vw;
+}
+
+
+#login-cart-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#login-register-div {
+    display: flex;
+    gap: 5px;
+}
+
+#cart-div {
+    display: flex;
+    gap: 5px;
+}
+
+.search-input {
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    font-size: 20px;
+    height: 2.5rem;
+    width: 25vw;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 95%, 0.856);
+    border: 1px solid white;
+}
+
+.search-input:focus {
+    outline: none;
+    border: 1px solid #0a490a;
+}
+
+#top-search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.top-search-btn {
+    padding: 5px;
+    position: absolute;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: -2.5rem;
+    right: 5px;
+}
+
+.fa-magnifying-glass {
+    color: #0a490a;
+}
+
+.login-link {
+    text-decoration: none;
+    color: blue;
+}
+
+#main-content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 5vh;
+}
+
+main {
+    position: relative;;
+}
