@@ -64,7 +64,10 @@
             <div class="highlights-products">
                 <div class="product">
                     <div class="cart-fav-section">
-                        <button onclick="teste(event)"><span><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        <form action="/cart/add" method="POST">
+                            <input type="hidden" name="id" value="1">
+                            <button type="submit"><span><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </form>
                         <button><span><i class="fa-regular fa-heart"></i></span></button>
                     </div>
                     <div class="product-image">

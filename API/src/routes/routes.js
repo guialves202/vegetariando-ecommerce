@@ -23,6 +23,6 @@ routes.get('/register', (req, res) => {
 
 routes.post('/register', UserController.store)
 
-routes.post('/cart', CartController.store)
+routes.post('/cart/add', CartController.store)
 
 export default routes;

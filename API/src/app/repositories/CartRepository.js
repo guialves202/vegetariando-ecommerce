@@ -6,8 +6,15 @@ class CartRepository {
         return;
     }
 
-    create(cart) {
-        db.Cart.create(cart);
+    async create(id) {
+        const cart = await db.Cart.create({
+            quantidade: 1,
+            productId: id,
+            userId: 1
+        });
+        if(cart) {
+            return true;
+        }
     }
 }
 
