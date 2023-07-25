@@ -1,9 +1,13 @@
 import UserRepository from "../repositories/UserRepository.js";
+import passport from "passport";
 
 class UserController {
 
-    index(req, res) {
-        return;
+    index(req, res, next) {
+        passport.authenticate('local', {
+            successRedirect: '/',
+            failureRedirect: '/login?fail=true'
+        })(req, res, next)
     }
 
     store(req, res) {
