@@ -2,19 +2,19 @@
     <div class="container">
         <a href="/"><img src="../img/vegetariando.png" alt="logo" class="logo-img"></a>
         <h1>Cadastre-se</h1>
-        <form action="/register" method="POST">
+        <form action="/register" method="POST" id="registerForm">
 
             <input type="text" name="name" id="name" placeholder="Primeiro nome" required>
             <input type="text" name="surname" id="surname" placeholder="Sobrenome" required>
             <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <input type="text" name="cpf" id="cpf" placeholder="CPF">
+            <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
 
             <select name="sexo" id="sexo">
-                <option value="M" selected>Masculino</option>
-                <option value="F">Feminino</option>
+                <option value="Masculino" selected>Masculino</option>
+                <option value="Feminino">Feminino</option>
             </select>
 
-            <input type="date" name="nascimento" id="nascimento">
+            <input type="date" name="nascimento" id="nascimento" required>
             <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
             
             <input type="password" name="passw" id="passw" placeholder="Senha" required>

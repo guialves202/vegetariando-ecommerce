@@ -9,24 +9,24 @@ const main = 'layouts/main';
 
 
 routes.get('/', async (req, res) => {
-    res.render(main, {content: '../index.ejs', cssPath: 'css/index.css', useHeader:true});
+    res.render(main, {content: '../index.ejs', cssPath: 'css/index.css', useHeader:true, jsPath: 'js/index.js'});
 })
 
 routes.get('/login', (req, res) => {
     if(req.query.fail) {
-        res.render(main, {content: '../login.ejs', cssPath: 'css/login.css', useHeader:false, message: 'Erro ao fazer login'});
+        res.render(main, {content: '../login.ejs', cssPath: 'css/login.css', useHeader:false, message: 'Erro ao fazer login', jsPath: 'js/index.js'});
     } else {
-        res.render(main, {content: '../login.ejs', cssPath: 'css/login.css', useHeader:false, message:''});
+        res.render(main, {content: '../login.ejs', cssPath: 'css/login.css', useHeader:false, message:'', jsPath: 'js/index.js'});
     }
     
 })
 
 routes.get('/cart', (req, res) => {
-    res.render(main, {content: '../cart.ejs', cssPath: 'css/cart.css', useHeader: true})
+    res.render(main, {content: '../cart.ejs', cssPath: 'css/cart.css', useHeader: true, message:'', jsPath: 'js/index.js'})
 })
 
 routes.get('/register', (req, res) => {
-    res.render(main, {content: '../register.ejs', cssPath: 'css/register.css', useHeader: false})
+    res.render(main, {content: '../register.ejs', cssPath: 'css/register.css', useHeader: false, message:'', jsPath: 'js/register.js'})
 })
 
 routes.post('/register', UserController.store)
